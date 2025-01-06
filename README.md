@@ -1,11 +1,11 @@
 # 설치
 - `git clone "git주소" && npm install`
 # 기본 실행 명령어
-- 디버깅 : ts-node ./src/index.ts 또는 cd .env && sh start_debug.sh
+- 디버깅 : `ts-node ./src/index.ts 또는 cd .env && sh start_debug.sh`
 	(반드시 서버 아이피를 확인후 localhost:3000 포트처럼 campustaxi react native / constants.tsx에서 socketURL를 바꾸세요. 그래도 안되면 포트포워딩 확인.)
 	
-- aws 배포 : 로컬에서 git push 후에 aws 우분투에서 git pull && cd .env && sudo sh kill_pm2.sh && sh start_release.sh 
-	(aws 우분투는 반드시 sudo sh start_release.sh 후에 sudo sh monitor.sh로 해야지 올바르게 로그가 보인다)
+- aws 배포 : 로컬에서 git push 후에 aws 우분투에서 `git pull && cd .env && sudo sh kill_pm2.sh && sh start_release.sh`
+	(aws 우분투는 반드시 `sudo sh start_release.sh 후에 sudo sh monitor.sh`로 해야지 올바르게 로그가 보인다)
 
 - (중요) nodejs 서버 및 불변 변수 설정하는 파일. 외부서버 연동 주소를 바꾸려면 socketURL의 ["AWSnodejsLoadBanlancer"] 이거를 바꾸면 된다.
 	권한 문제 시: `sudo sh start_release.sh`
