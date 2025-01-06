@@ -8,7 +8,7 @@
 	(aws 우분투는 반드시 sudo sh start_release.sh 후에 sudo sh monitor.sh로 해야지 올바르게 로그가 보인다)
 
 - (중요) nodejs 서버 및 불변 변수 설정하는 파일. 외부서버 연동 주소를 바꾸려면 socketURL의 ["AWSnodejsLoadBanlancer"] 이거를 바꾸면 된다.
-	권한 문제 시: *sudo* sh start_release.sh
+	권한 문제 시: `sudo sh start_release.sh`
 
 # .env 설명
 - .env는 테스트 및 실행하기 위해서 있는 폴더입니다.
