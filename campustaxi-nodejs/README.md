@@ -15,6 +15,7 @@ cd .env && sh start_debug.sh 처럼 사용하시면됩니다.
 (permition 권한 문제가 있을 경우 sudo sh start_debug.sh를 사용하세요.)
 
 # 각 파일별 설명(.env)
+```
 ├── gitupload.sh //sh gitupload.sh "커밋내용" 커밋 빠르게 전송하기위한 단축 명령어
 ├── kill_pm2.sh //기본 start_release.sh 실행시 pm2로 배포됩니다. 배포된 서버를 종료시켜주기 위한 명령어.
 ├── kill_port3000.sh //기본 start_debug.sh 실행시 port 3000으로 할당됩니다. 테스트용 서버를 종료시켜주기 위한 명령어.
@@ -26,9 +27,10 @@ cd .env && sh start_debug.sh 처럼 사용하시면됩니다.
 ├── start_debug.sh //실행명령어 로컬에서 돌려야하고 Reacte native constants.tsx socketURL 아이피를 적절하게 바꾸어줘야 로그를 확인할 수 있다.
 ├── start_release.sh //aws배포 명령어 aws우분투로 직접 접속후에 서버를 돌릴때 사용하는 명령어다. aws 우분투에 접속해야되므로 이동원(3chamchi)에게 문의.
 ├── start_test.sh //현재안씀
+```
 
 # 각 파일별 설명(메인 소스코드)
-
+```
 ├── index.ts //실제 구동하는 파일, 가장 처음 실행되고 가장 중요하다.
 ├── module
 │   ├── api
@@ -40,3 +42,4 @@ cd .env && sh start_debug.sh 처럼 사용하시면됩니다.
 │   │   └── premium.ts //프리미엄(결제 등) 관련
 │   └── socket
 │       └── socket.ts //소켓관련
+```
